@@ -1,0 +1,111 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    background: no-repeat center center fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+button {
+    background-color: #ba6859;
+    border: none;
+    font-family: "Budidaya";
+    padding: 10px 20px;
+    font-size: 3rem;
+    margin: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8A4C43;
+}
+
+p {
+    text-align: center;
+    font-family: "Budidaya";
+    font-size: 3rem;
+    margin: 0; /* Remove qualquer margem padrão */
+}
+
+#telaInicial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#telaSobre {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#telaFinal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#cronometro {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: "Budidaya";
+    font-size: 2.5rem;
+    pointer-events: none;
+}
+
+#textoSobre {
+    background-color: #ba6859;
+    padding: 0px 20px;
+    border-radius: 7px;
+    line-height: 1.8; 
+    margin: 5px 0; 
+}
+
+#textoSobre p {
+    margin: 0px 0;
+}
+
+#textoResultado {
+    background-color: #ba6859;
+    padding: 0px 20px;
+    border-radius: 7px;
+    line-height: 1.8;
+}
+
+#textoResultado p {
+    margin: 0px 0;
+}
+
+@font-face {
+    font-family: Budidaya;
+    src: url("./Budidaya.otf");
+}

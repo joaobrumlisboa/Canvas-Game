@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo com Canvas</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    
+    <p id="cronometro"></p>
+
+    <div id="telaInicial">
+        <button id="jogar" onclick="iniciarJogo()">Jogar</button>
+        <button id="sobre" onclick="mostrarSobre()">Sobre</button>
+    </div>
+
+    <div id="telaSobre">
+        <div id="textoSobre">
+            <p>Feito por:<br>Bruno Matheus Szczypa Pires<br>Eduardo Nicolosi de Oliveira<br>João Pedro Brum Lisboa<br>Pedro Felix Silva</p>
+        </div>    
+        <button id="voltar" onclick="voltar()">Voltar</button>
+    </div>
+
+    <div id="telaFinal">
+        <div id="textoResultado">
+            <p id="resultado"></p>
+        </div>
+        <button id="botaoReiniciar" onclick="iniciarJogo()">Tentar Novamente</button>
+        <button id="voltar" onclick="voltar()">Voltar</button>
+    </div>
+</body>
+
+</html>
